@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         php: [8.0, 8.1]
-        dependency-version: [prefer-stable, prefer-lowest]
+        dependency-version: [prefer-stable]
 
     name: CI - PHP ${{ matrix.php }}  - (${{ matrix.dependency-version }})
 
