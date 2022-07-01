@@ -1,0 +1,33 @@
+{
+    "name": "mateusjunges/php-json-builder",
+    "description": "A simple utility class to work with Json objects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Junges",
+            "email": "mateus@junges.dev",
+            "role": "Software Engineer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Junges\\Json\\": "src/",
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Junges\\Json\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
+    }
+}
